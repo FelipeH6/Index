@@ -134,5 +134,103 @@ ex <a href="projetos/Projetosite.html" target="_blank" >Vai abrir o outro projet
 <br>
 <br> <li> Se estiver na mesma pasta só colocar o nome do arquivo</li>
 <li>Se estiver em outra pasta coloca o ../ e vai aparecer as pasta para selecionar</li>
+<br>
+
+<table>
+    <caption> <strong> Tabela </strong></caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <td>Felipe</td>
+                <td>28 anos</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>30 anos</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <td> <em>Total</em> </td>
+                <td> <strong>2 pessoas</strong></td>
+            </tr>       
+         </tfoot> 
+</table>
+<br>
+<table>
+    <caption>Produtos Produzidos x Vendidos por loja</caption>
 
 
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Apple</th>
+            <th colspan="2" scope="colgroup">Microsoft</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th  style="background-color: yellowgreen" scope="row">Celular</th>
+            <td>50</td>
+            <td>48</td>
+            <td>50</td>
+            <td>35</td>
+        </tr>
+
+        <tr>
+            <th style="background-color: yellowgreen"scope="row">Computadores</th>
+            <td>100</td>
+            <td>80</td>
+            <td>100</td>
+            <td>55</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<strong> Aqui para colocar o icone da aba do navegador</strong> 
+<link rel="icon" href="link do icone">
+
+<br><br>
+<strong>Aqui para nomes e descricao do site em buscas</strong>
+<meta name="author" content="Felipe Hernandez">
+<meta name="description" content=" Descricao do site">
+<meta name="robots" content="nofollow, follow, index"> seguir ou nao os links da pagina (padrao do google seguir e indexar) 
+<br><br>
+<form action="/movies" method="get">
+    <input type="text" placeholder="Find movies" name="title">
+    <input type="submit" class="btn btn-primary mr-auto ml-2" value="Search">
+  </form>
+
+  <body>
+    <h2 class="gray-text">Change your life, learn to code</h2>
+  </body>
+
+  <div class="card"></div>
+  .card {
+    padding: 24px;
+  }
+  <div class="card">
+    <h2>Change your life, learn to code</h2>
+    <p>Through immersive coding bootcamps, Le Wagon teaches you the skills and entrepreneurial mindset you need to thrive, now and in the future.</p>
+  </div>
+
+  

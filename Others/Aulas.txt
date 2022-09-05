@@ -1,0 +1,37 @@
+TCP - Controle de protocolo de transmissao  - Garatir que as infos cheguem corretamente no destino
+
+DNS - Dicionario (Converter um dominio em IP) 
+
+GUI - Area grafica do PC
+
+CLI - Linha de comando! (programador)
+
+
+KERNEL -
+Tela de inicializacao de programas 
+
+<!--   - Comentario html
+
+    Atributos globais mais usados
+
+ - Class - classificar
+ - Contentitable - usar para poder mudaro conteudo  
+ - Data-* = atributos
+ - Hidden = esconder tag
+ - id = usar um por pagina 
+ - style = cor e atributos visuais
+ - tabindex = escolher qual contudo vai de tab em tab 
+ - title = titulo se deixar a seta em cima
+
+existem elementos que sao em linha e outros que quebram 
+p, br = quebra
+em, a = nao quebram
+
+o br quebra <br>
+
+&nbsp; coloca espaco no inicio do texto <br>
+&gt;&lt; usam caracteres especiais <br>
+&quot; aspas <br>
+&apos; asps simples
+
+! = ja deixa a pagina toda configurada basica pra html

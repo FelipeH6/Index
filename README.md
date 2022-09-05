@@ -1,2 +1,0 @@
-# Programacao
- Day 1 

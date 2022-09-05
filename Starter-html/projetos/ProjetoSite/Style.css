@@ -1,0 +1,57 @@
+
+h1,h2,h3 { font-family: 'Times New Roman', Times, serif;          
+}
+
+h1 { font-size: 48px;
+    margin: 0 600px ;
+    border-bottom: 10px solid red;
+    box-sizing: 100px;
+}
+
+h2 {
+    width: 350px; /*dimensoes da caixa*/
+    color: white;
+    background-color: darkblue;
+    font-size: 30px;
+    line-height: 1.6;
+    padding: 10px 50px;  /*espaco da borda da caixa ate o texto */
+    border: 150 solid red;
+    text-align: center;
+    border-radius: center;
+    margin: auto;
+}
+ 
+
+    /* assim faz comentarios em css 
+    widht é largura!!
+    padding é Preenchimento! 
+    string são textos envoltos de aspas
+
+    Universal selector < Element type < CLass < ID < Inline.
+    existe o !importante, mas tentar evitar!!!!
+    !!! Block: <p> <div> <section> e todos os headings <h1><h2>
+    !!! Inline: <a> <strong> <span> <em> 
+    */ 
+
+h3 {
+    width: 250px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    display: inline;
+    
+    }
+
+    /* @import - pega de fora
+        @ media - condicionais para despositivos
+        @font-face
+        @keyframes
+        */
+
+    /* 1 cm = 96px/ 2.54 
+       1 in = 2.54cm = 96 px 
+       */
+
+    /* EM faz referencia ao tamanho do pai 
+        REM faz referencia ao tamananho do elemento raiz ROOT/html
+        
