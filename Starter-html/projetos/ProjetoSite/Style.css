@@ -42,6 +42,21 @@ h3 {
     
     }
 
+
+a {
+    text-decoration: none;
+    background-color: palevioletred;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba (0,0,0,0,1)
+    transition 0.3s ease;
+}
+
+a:hover {
+background-color: #964A4A;
+}
+
     /* @import - pega de fora
         @ media - condicionais para despositivos
         @font-face
@@ -53,5 +68,5 @@ h3 {
        */
 
     /* EM faz referencia ao tamanho do pai 
-        REM faz referencia ao tamananho do elemento raiz ROOT/html
+        REM faz referencia ao tamananho do elemento raiz ROOT/html */
         
