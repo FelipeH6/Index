@@ -20,9 +20,11 @@ h2 {
     border-radius: center;
     margin: auto;
 }
- 
+    /* #faz referencia a ID 
+      . Faz referencia a Class*/
 
-    /* assim faz comentarios em css 
+    /* Sempre que for dar nomes as classes colocar primeiro o tipo do elemento-personalizacao
+    assim faz comentarios em css 
     widht é largura!!
     padding é Preenchimento! 
     string são textos envoltos de aspas
