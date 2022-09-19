@@ -35,3 +35,14 @@ o br quebra <br>
 &apos; asps simples
 
 ! = ja deixa a pagina toda configurada basica pra html
+
+CODIGOS TERMINAL
+
+pwd 👉 prints the filepath of the current directory (print working directory)
+ls 👉 lists files and directories in current directory (list)
+cd path/to/go 👉 navigates from one folder to another (change directory). If you want to go back, use .. to refer to the parent directory.
+mkdir folder_name 👉 creates a new directory (make directory)
+touch file_name 👉 creates a new file
+mv file_name path/to/directory 👉 moves the file into the directory (move)
+rm path/to/file 👉 removes a file (remove)
+cat file_name 👉 display the content of a file
