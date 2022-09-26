@@ -33,6 +33,11 @@ h2 {
     existe o !importante, mas tentar evitar!!!!
     !!! Block: <p> <div> <section> e todos os headings <h1><h2>
     !!! Inline: <a> <strong> <span> <em> 
+    	HSL (cor pela esprial de cores)
+        background-position = aonde a imagem de fundo vai ficar
+        background-attachment: fixed; = deixa o a imgagem de fundo fixa ao inves de mover com o scroll
+        background: linear-gradient(Angulo, cor1, cor2, cor3) = fundos em degrade, pode ser radial-gradient para sair do meio
+        usando a "," voce pode usar duas configuracoes diferentes e somarlas 
     */ 
 
 h3 {

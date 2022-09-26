@@ -24,6 +24,7 @@ background-color: #a91d1d;
 .img-head {
     border-radius: 50%;
     border: 2px solid white;
+    background-size: contain;
 }
 
 #Introduction {

@@ -46,3 +46,42 @@ touch file_name 👉 creates a new file
 mv file_name path/to/directory 👉 moves the file into the directory (move)
 rm path/to/file 👉 removes a file (remove)
 cat file_name 👉 display the content of a file
+
+GIT e GITHUB
+Fork - copia o respositorio e leva pro seu perfil
+No terminal:
+git --version = verifica se ja tem instaldo git no sistema linux e mac
+git clone + link do git = vai trazer todo repositorio do Git pra sua maquina
+la = mostra todos os itens incluindo os ocultos (so funciona no mac, outras maquinas usa ls -la)
+git status = mostra todas as alteracoes feitas e nao foram salvas
+git add . = le todas as mudancas e deixa pronto pra subir pro github
+git commit -m "mudanca feita" = sobe pro git as mudancas feitas. (local)
+git push = sobe pro github
+git init = inicializa o arquivo da maquina no git
+git remote add origin + link do repositorio do github = vai conectar o seu repositorio da maquina com o remoto (online)
+git branch = mostras as ramificacoes
+git checkout = troca entre as branchs
+git checkout -b + nome da branch que voce quer = cria nova branch
+git merge = faz as mudancas feitas no codigo de uma branch pra outra. (no branch que voce tiver para a branch que voce colocar depois do merge do codigo) 
+git diff = mostra as diferencas entre o que existia com as mudancas feitas no codigo
+git branch -d + nome da branch = remove a branch
+git commit -am "comentario" = adicona e sobe automaticamente as mudancas (so funciona para modificados e nao criados!)
+git reset = vai desfazer as mudancas adicionadas (antes do commit)
+git reset HEAD~1 = vai desfazer o ultimo commit (o 1 significa um anterior ao ultimo)
+git reset --hard = remove todos o commits antes do que voce selecionou.
+git log = ve os ultimos commits 
+
+
+ssh-keygen -t rsa -b 4096 -C "emaildogit@gmail.com" = cria senha para acesso no git 
+vai te pedir o nome do arquivo para salvar a senha (inventa um)
+cat + nome do arquivo chave = mostra a senha 
+copia a senha (nao funciona cmd + c) 
+vai no github e ssh e gpg keys e cola a senha adicionando a senha 
+Voce precisa salvar a senha no seu computador tambem! Use o help do git pra fazer isso no terminal
+
+Branching = ramificacoes
+Ter sempre uma branch master e ter branchs de futuro e de correcoes e so quando estiver 100% fazer o commit para a Master!
+
+
+
+
