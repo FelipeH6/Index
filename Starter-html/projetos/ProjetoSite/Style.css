@@ -38,6 +38,39 @@ h2 {
         background-attachment: fixed; = deixa o a imgagem de fundo fixa ao inves de mover com o scroll
         background: linear-gradient(Angulo, cor1, cor2, cor3) = fundos em degrade, pode ser radial-gradient para sair do meio
         usando a "," voce pode usar duas configuracoes diferentes e somarlas 
+
+        Position: relative; abre a posibilidade de posicionar de forma individual as boxes
+        position: absolute; sobe uma camada dentro do fluxo (pagina inteira)
+        position: fixed; ele move junto com a pagina! 
+        z-index: numero;  coloca em ordem de prioridade dentro das camadas (numero maior fica em cima)
+        display:flex; faz com que as caixas sejam editadas (ficam horizontais) 
+            vw como unidade se refere a toda pagina
+            display:grid; divide em colunas e linhas 
+            grid-template-areas: coloca entre "" quantas colunas cada linha vai ocupar
+            grid-area: coloca o nome que voce determinou no template acima
+            grid-template-rows: determina quants linhas cada coluna vai ocupar em ordem!
+            fr como unidade determina que ela sera flixivel na pagina
+
+    Fontes
+        serif sao as fontes que tem as pontas 
+        sans-serif sao as fontes que soa retas
+
+        @import - pega de fora as fontes!! 
+        @ media - condicionais para despositivos
+        @font-face 
+        @keyframes
+        link (colocar direto no HTML) 
+
+        Font-variant: small-caps; deixa todas as letras maiusculas (as maiusculas maiores)
+        font-stretch: alarga a fonte 
+        letter-spacing: 
+        word-spacing: espaco entre as palavras 
+        text-transform: uppercase; lowercase; capitalize ( muda as letras pro que voce escolher)
+        text-decoration: line (line-throught,underline, overline), style (wavy, dashed, dotted, solid), color (da linha) Ja eh shorthanded
+        text-shadow: 1px 1px 8px 
+        font: eh shorthanded -style,- variant, -weight, -stretch, -size, -line-height, e -family (sizy e line sao separados por /)
+
+
     */ 
 
 h3 {
@@ -64,11 +97,7 @@ a:hover {
 background-color: #964A4A;
 }
 
-    /* @import - pega de fora
-        @ media - condicionais para despositivos
-        @font-face
-        @keyframes
-        */
+   
 
     /* 1 cm = 96px/ 2.54 
        1 in = 2.54cm = 96 px 
