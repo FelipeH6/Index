@@ -1,0 +1,75 @@
+
+<!--
+    =O Action leva pra pagina que voce determinar, se deixar vazio ele vai fazer o reload da pagina com os dados novos
+    -Method define os verbos post e get, explicar como os dados estao trafegando. Get mostra na URL os dados e Post não
+    -Nao se pode fazer um form dentro do outro
+    -Por padrao ele considera o action vazio e o method GET-->
+    
+<!-- <fieldset>
+    -disabled - pode desabilitar todas as informacoes do fieldset para que nao sejam enviados ao submeter o formulario
+    -form - permite que link o fieldset com o formulario da pagina a qual ele vai pertencer (nao precisa estar dentro da pagina)
+    -name - da nome ao fieldset ( nao aparece dentro do formulario)
+    
+    <legend> 
+    -Primeiro elemento dentro do fieldset
+    -Nome do agrupamento
+-->    
+<form action="" method="">
+    <fieldset> <!--se eu colocar disabled aqui ele disabilita o conteudo-->
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<!--tambem posso deixar ele fora e fazer essa conexao-->
+<form id="Contato" action="">
+    <button>Enviar</button>
+</form>
+
+<fieldset form="Contato" name="inputs-contact">
+    <legend>Contato</legend>
+
+    <label for="">Nome</label>
+    <input type="text">
+</fieldset>
+
+<!--
+    <Label> Etique para algum tipo de informacao que for pedir.
+        -for = faz o link com o nome do input que voce fizer conexao
+    <input> coloca a caixa ao lado para inserir o dado
+        -id = faz a conexao com o label que voce fez
+    <button> 
+        -type="Submit" envia o formulario
+                "reset" limpa o formulario (se voce deixa dentro do mesmo form action voce pode comolcar o input com value="O que voce quer que apareca quando apertar o botao reset")
+        -autofocus = Foco da pagina (se estiver em enviar ao dar enter ele vai enviar o formulario)
+        -disabled = nao deixa enviar o formuilario (util para que a pessoa nao possa enviar o formulario no meio, pode ser controlado por JS)
+        -name = 
+        -value = escolhe qual valor receber de cada button 
+        -form = faz a conexao com o id de form que voce deu
+    <datalist> Lista com valores sugeridos para um formulario
+        -id = nome a datalist
+        <option> nome da opcao </option>
+--> 
+<br><br><br>
+ <input 
+    type="text"
+    list="fruitsdata"
+    placeholder="Escolha uma fruta"/>
+
+<datalist id="fruitsdata">
+    <option>Maça</option>
+    <option>Pera</option>
+    <option>Morango</option>
+    <option>Banana</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+    <option>#0000ff</option>
+</datalist>
+<input type="color" list="colorsdata"> <!--Coloca as colres que voce quer como opcao (so com os que estao na lista)-->
+
+
