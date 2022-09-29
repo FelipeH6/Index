@@ -13,31 +13,10 @@
     <legend> 
     -Primeiro elemento dentro do fieldset
     -Nome do agrupamento
--->    
-<form action="" method="">
-    <fieldset> <!--se eu colocar disabled aqui ele disabilita o conteudo-->
-        <legend>Contato</legend>
 
-        <label for="">Nome</label>
-        <input type="text">
-    </fieldset>
-</form>
-
-<!--tambem posso deixar ele fora e fazer essa conexao-->
-<form id="Contato" action="">
-    <button>Enviar</button>
-</form>
-
-<fieldset form="Contato" name="inputs-contact">
-    <legend>Contato</legend>
-
-    <label for="">Nome</label>
-    <input type="text">
-</fieldset>
-
-<!--
     <Label> Etique para algum tipo de informacao que for pedir.
         -for = faz o link com o nome do input que voce fizer conexao
+
     <input> coloca a caixa ao lado para inserir o dado
         -id = faz a conexao com o label que voce fez   
         -type = define qual tipo de dado ele vai receber (password, date, number, text, color,etc..)
@@ -92,7 +71,6 @@
                 - Selecionar mes e ano
             -week
             -time
-
         -autocomplete + tipo de dado = busca no seu navegador algum dado que voce usou recentemente 
         -autofocus = só um por pagina! 
         -disabled = impede que coloquem dados
@@ -102,6 +80,7 @@
         -required = faz com que o dado seja obrigatorio (quase todos aceitam)
         -placeholder (password, search, tel, text,url) = deixa a sugestao dentro da caixa do que deve ser o dado
         -label = nome descritivo ao lado (usar esse junto ao placerholder por acessibilidade)
+
     <button> 
         -type="Submit" envia o formulario
                 "reset" limpa o formulario (se voce deixa dentro do mesmo form action voce pode colocar o input com value="O que voce quer que apareca quando apertar o botao reset")
@@ -110,15 +89,18 @@
         -name = 
         -value = escolhe qual valor receber de cada button 
         -form = faz a conexao com o id de form que voce deu
+
     <datalist> Lista com valores sugeridos para um formulario
         -id = nome a datalist
         <option> nome da opcao </option>
+
     <textarea>
         -faz os mesmos links com id e name
         -rows e clos = tamanho do area de texto
         -maxlength e minlength 
         -wrap on, off, soft, hard = vai fazer com que o texto caiba dentro do box ou se vai continuar na mesma linha fora da caixa
         -outros atributos natruais de forms
+
     <select> - Controle que fornece um menu de opções
         <option>
         - Contem as opções a serem selecionadas
@@ -129,6 +111,29 @@
             -label = coloca um submenu explicando as opcoes a seguir
 
 --> 
+<form action="" method="">
+    <fieldset> <!--se eu colocar disabled aqui ele disabilita o conteudo-->
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<br>
+<!--tambem posso deixar ele fora e fazer essa conexao-->
+<form id="Contato" action="">
+    <button>Enviar</button>
+</form>
+<br>
+
+<fieldset form="Contato" name="inputs-contact">
+    <legend>Contato</legend>
+
+    <label for="">Nome</label>
+    <input type="text">
+</fieldset>
+
 <br><br><br>
  <input 
     type="text"
@@ -175,3 +180,30 @@
         <option value="samsung">Flip5</option>
     </optgroup>     
 </select>
+<br><br>
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+            <label for="name">Nome</label> 
+            <br>
+            <input id="name" type="text" name="name">
+            <br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input id="email" type="email" name="email">
+            <br><br>
+
+            <label for="message">Mensagem</label>
+            <br>
+            <textarea name="message" id="message" rows="5"></textarea>
+            <br><br>
+
+            <button type="submit">
+                Enviar
+            </button>
+            
+        </type>
+    </fieldset>
+</form>
