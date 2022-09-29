@@ -39,10 +39,72 @@
     <Label> Etique para algum tipo de informacao que for pedir.
         -for = faz o link com o nome do input que voce fizer conexao
     <input> coloca a caixa ao lado para inserir o dado
-        -id = faz a conexao com o label que voce fez
+        -id = faz a conexao com o label que voce fez   
+        -type = define qual tipo de dado ele vai receber (password, date, number, text, color,etc..)
+            -password 
+                -minlength = minimo de caracteres que a senha deve ter
+                -maxlength = maximo de caracteres que a senha deve ter
+                -size = determina o tamanho da caixa para digitacao da senha
+                -pattern = define o padrao de senha que voce quer [0-9a-fA-F]{4,8} (use junto com title para descrever o tipo que voce quer)
+                -required = torna ele obrigatorio
+                -inputmode (numeric) = faz com que em smartphones abra diretamente o teclado numerico
+                -autocomplete="on" "off" "new-password"= Vai permitir caso voce tenha salvo essa senha no PC que se complete automaticamente, ou nao, ou sugestoes de nova senha.
+            -email
+                -multiple = permite colocar um ou mais (separados por ",") 
+                -pattern=".+@gmail\.com\.br" Faz com que so sejam permitidos gmails no formulario (.+ = numero indefinido de caract)(\ antes de . é para que ele leia que é um .)
+                -list = faz a conexao com uma lista presugerida
+                -todos os outros 
+            -url 
+                -pattern=".*\.com\.br.*" = só vai deixar dominios .com.br
+                -spellcheck = habilitar a verificacao ortografica para esse input
+                -todos os outros 
+            -file (ja cria diretamente uma caixa para abir um arquivo dentro do pc)
+                -accept=".doc , .docx, .pdf, .jpeg, audio/*, image/*" = descreve que tipos de arquivos sao permitidos
+                -multiple = varios arquivos
+                -enctype="multipart/form-data" ISSO PRECISA SER COLOCADO DENTRO DO CODIGO DO FORM PARA ACEITAR ARQUIVOS.
+            -color
+                -list = tomar cuidado que muitos navegadores nao aceitam! 
+            -checkbox (caixas que podem ser marcados)
+                -name="interest" (pode colocar em mais de um checkbox para o backend entender que se tratam do mesmo topico) 
+                -id "music"
+                -checked = ja deixa marcado por padrao
+            -hidden (fica invisivel ao usuario, sera enviado junto ao formulario, nao recebe foco e nao aparece para leitores)
+                -precisa de -name 
+                - bom para pegar dados como hora e data que preencheu, numero de pessoas, etc
+            -radio (selecionar uma unica opcao em um grupo)
+                -checked
+                -value (ver codigo)
+            -search
+                - Pode ser colocado dentro de um datalist 
+                -aria-label = serve de opcao quando tem label (acessibilidade, nao fica visivel)
+                -pattern="[0-9]{2}"= espera uma expressao regular (busca por semelhanca)
+            -number
+                -min, max = define minimo e maximo 
+                -step = pula as opcoes na quantidade que voce definiu
+                - pode linkar com lists e datalists 
+            -range (barra de arreastar opcoes laterais)
+                -todos os controles igual a number
+            -date (em muitos brownser ainda nao funciona. Olhar kttps://caniuse.com)
+                -tem que ser no padrao ano-mes-dia (americano)
+            -datetime-local 
+                -date com horario 
+            -month
+                - Selecionar mes e ano
+            -week
+            -time
+
+        -autocomplete + tipo de dado = busca no seu navegador algum dado que voce usou recentemente 
+        -autofocus = só um por pagina! 
+        -disabled = impede que coloquem dados
+        -value = Ja deixa uma resposta padrao 
+        -readonly = nao permite edição (quase todos aceitam)
+        -form = conexao com o id de form que voce deu (precisa de um -name pra fazer referencia)(quase todos aceitam) 
+        -required = faz com que o dado seja obrigatorio (quase todos aceitam)
+        -placeholder (password, search, tel, text,url) = deixa a sugestao dentro da caixa do que deve ser o dado
+        -label = nome descritivo ao lado (usar esse junto ao placerholder por acessibilidade)
     <button> 
         -type="Submit" envia o formulario
-                "reset" limpa o formulario (se voce deixa dentro do mesmo form action voce pode comolcar o input com value="O que voce quer que apareca quando apertar o botao reset")
+                "reset" limpa o formulario (se voce deixa dentro do mesmo form action voce pode colocar o input com value="O que voce quer que apareca quando apertar o botao reset")
         -autofocus = Foco da pagina (se estiver em enviar ao dar enter ele vai enviar o formulario)
         -disabled = nao deixa enviar o formuilario (util para que a pessoa nao possa enviar o formulario no meio, pode ser controlado por JS)
         -name = 
@@ -51,6 +113,21 @@
     <datalist> Lista com valores sugeridos para um formulario
         -id = nome a datalist
         <option> nome da opcao </option>
+    <textarea>
+        -faz os mesmos links com id e name
+        -rows e clos = tamanho do area de texto
+        -maxlength e minlength 
+        -wrap on, off, soft, hard = vai fazer com que o texto caiba dentro do box ou se vai continuar na mesma linha fora da caixa
+        -outros atributos natruais de forms
+    <select> - Controle que fornece um menu de opções
+        <option>
+        - Contem as opções a serem selecionadas
+        -value
+        -multiple
+        -size 
+        <optgroup> agrupamento de varias opções 
+            -label = coloca um submenu explicando as opcoes a seguir
+
 --> 
 <br><br><br>
  <input 
@@ -71,5 +148,30 @@
     <option>#0000ff</option>
 </datalist>
 <input type="color" list="colorsdata"> <!--Coloca as colres que voce quer como opcao (so com os que estao na lista)-->
+<br><br>
+<fieldset>
+    <legend>O que você tem que fazer agora?</legend>
+    <label for="work">Trabalhar</label>
+    <input checked type="radio" id="work" name="whatyouhavetodo" value="trabalhar">
 
+    <label for="study">Estudar</label>
+    <input type="radio" id="study" name="whatyouhavetodo" value="estudar">
+</fieldset>
+<br><br>
 
+<label for="phoneselector">Qual seu celular?</label>
+<br>    
+<select name="phonemodel" id="phoneselect">
+    <optgroup label="Iphones">
+        <option value="iphone">Iphone 11</option>
+        <option value="iphone">Iphone 12</option>
+        <option value="iphone">Iphone 13</option>
+        <option value="iphone">Iphone 14</option>
+    </optgroup>
+
+    <optgroup label="Samsungs">
+        <option value="samsung">Flip3</option>
+        <option value="samsung">Flip4</option>
+        <option value="samsung">Flip5</option>
+    </optgroup>     
+</select>
