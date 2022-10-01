@@ -10,6 +10,12 @@
 - Você pode determinar variantes de determinadas variantes colocando nomedavariante.length! (.reverse!, .upcase!, .downcase!)
 - # = comentarios de uma linha
 - =begin - Comentários de mais de uma  linha! =end
+- if/elsif/else/unless = Condicionais (elsif outra condição do if)
+- == - compara se duas condicionais são iguais
+- (! =)  = compara se duas condicionais são diferentes
+- && = Compara várias condições e coloca com true se todas as condições forem true.
+- || = Compara várias condições e coloca com true se uma ou todas as condições forem true.
+- ! = faz com que true seja false e false seja true
 
 Addition (`+`)
 
@@ -43,3 +49,16 @@ print "In what State?"
 state = gets.chomp
 state.upcase!
 puts "You live #{city} in #{state}!"
+
+
+
+print "Escolha um numero inteiro: "
+user_num = Integer(gets.chomp)
+
+if user_num < 0
+  puts "Voce escolheu um numero negativo!"
+elsif user_num > 0
+  puts "Voce escolheu umm numero positivo!"
+else
+  puts "Yoce escolheu zero!"
+end
