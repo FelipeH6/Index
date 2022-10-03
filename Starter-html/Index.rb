@@ -16,6 +16,19 @@
 - && = Compara várias condições e coloca com true se todas as condições forem true.
 - || = Compara várias condições e coloca com true se uma ou todas as condições forem true.
 - ! = faz com que true seja false e false seja true
+- while = loop para chegar em determinado valor (enquanto) = repita isso enquanto
+- until = loop para encontrar determinado valor (ate) = repita isso ate que
+- +=, -=, *=, /= são atalhos para colocar uma variável  exemplo - counter = counter +1 pode ser subst por counter += 1
+- for = você pode usar quando souber quantas vezes seu loop  vai rodar. ex = for num in 1…10
+- .. , … = Na frase acima com .. você inclui o maior número e com … você não inclui
+- loop, do, break = ver exepmplo 3
+- next = usada pra pular no meio do loop  ex = object.each { |item| } = ver exemplo 4
+- “do/end” pode substituir “{}”
+- .times = modo compacto de “for”
+
+- .gsub!(/oquequertrocar/, “troca”) = troca o que voce quiser
+- .includes? “letra” = seleciona a letra que voce quer trocar
+- .each = seleciona todos os elementos dentro de uma array
 
 Addition (`+`)
 
@@ -61,4 +74,18 @@ elsif user_num > 0
   puts "Voce escolheu umm numero positivo!"
 else
   puts "Yoce escolheu zero!"
+end
+
+i = 20
+loop do
+  i -= 1
+  next if i % 2 != 0
+  print "#{i},"
+  break if i <= 0
+end
+
+array = [1,2,3,4,5]
+array.each do |x|
+  x *= 10
+  print "#{x}"
 end
