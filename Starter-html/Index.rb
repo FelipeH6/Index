@@ -25,6 +25,36 @@
 - next = usada pra pular no meio do loop  ex = object.each { |item| } = ver exemplo 4
 - “do/end” pode substituir “{}”
 - .times = modo compacto de “for”
+- multi_d_array = arrays dentro de arrays ex: minha_array = [[0, 1, 2, 3],[4, 5, 6, 7]]
+- Da pra selecionar um index dentro de um array (comecando no index 0 ) ex: array = [2, 4, 6,] // array[0] vai ser o numero 2
+- hash = conjunto de variaveis, ex:
+=end
+
+my_hash = { "name" => "Felipe",
+  "age" => 28
+  "hungry?" => true
+
+# - H[ash.new](http://hash.new) = cria nova hash = a colocar uma variável = {} (tem que estar em letra maiúscula)
+
+pets = Hash.new 
+pets["Mango"] = "dog"
+pets["Gretel"] = "dog"
+
+#or
+
+pets = {
+"Mango" => "dog",
+"Gretel" => "dog"
+}
+
+puts pets["Mango"]
+
+=begin
+- Você pode determinar variantes de determinadas variantes colocando nomedavariante.length! (.reverse!, .upcase!, .downcase!)
+- .gsub!(/oquequertrocar/, “troca”) = troca o que voce quiser
+- .includes? “letra” = seleciona a letra que voce quer trocar
+- .each = seleciona todos os elementos dentro de uma array
+- .split(” ”) = divide uma string em uma array
 
 - .gsub!(/oquequertrocar/, “troca”) = troca o que voce quiser
 - .includes? “letra” = seleciona a letra que voce quer trocar
