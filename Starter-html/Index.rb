@@ -59,6 +59,9 @@ puts pets["Mango"]
 - .gsub!(/oquequertrocar/, “troca”) = troca o que voce quiser
 - .includes? “letra” = seleciona a letra que voce quer trocar
 - .each = seleciona todos os elementos dentro de uma array
+- .split(” ”) = divide uma string em uma array
+- .sort_by = vai colocar em ordem (arrays de arrays)
+- .to_s = converte o valor de um numero para uma string
 
 Addition (`+`)
 
@@ -119,3 +122,20 @@ array.each do |x|
   x *= 10
   print "#{x}"
 end
+
+
+puts "O que voce mais gosta?"
+text = gets.chomp
+
+words = text.split (" ")
+
+frequencies = Hash.new(0)
+
+words.each { |word| frequencies[word] += 1 } 
+
+frequencies = frequencies.sort_by { |word, count| count}
+frequencies.reverse!
+
+frequencies.each { |word, count|
+puts word + " " + count.to_s
+}
