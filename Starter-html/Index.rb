@@ -34,7 +34,7 @@ my_hash = { "name" => "Felipe",
   "age" => 28
   "hungry?" => true
 
-# - H[ash.new](http://hash.new) = cria nova hash = a colocar uma variável = {} (tem que estar em letra maiúscula)
+# - Hash.new = cria nova hash = a colocar uma variável = {} (tem que estar em letra maiúscula)
 
 pets = Hash.new 
 pets["Mango"] = "dog"
@@ -49,6 +49,39 @@ pets = {
 
 puts pets["Mango"]
 
+#- def = define um método. Usar o * quando o argumento possa receber um ou mais valores
+
+def what_up(greeting, *friends)
+  friends.each { |friend| puts "#{greeting}, #{friend}!" }
+end
+
+what_up("What up", "Ian", "Zoe", "Zenas", "Eleanor")
+
+#- blocks 
+
+# method that capitalizes a word
+def capitalize(string) 
+  puts "#{string[0].upcase}#{string[1..-1]}"
+end
+
+capitalize("ryan") # prints "Ryan"
+capitalize("jane") # prints "Jane"
+
+# block that capitalizes each string in the array
+["ryan", "jane"].each {|string| puts "#{string[0].upcase}#{string[1..-1]}"} # prints "Ryan", then "Jane"
+
+
+# ≤⇒ forma de comparar um elemento com o outro (retorna 0 se forem iguis, 1 se o primeiro elemento for maior e -1 se o segundo elemento for maior
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+
+# To sort our books in ascending order, in-place
+books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
+
+# Sort your books in descending order, in-place below
+
+books.sort! { |firstBook, secondBook| secondBook <=> firstBook}
+print books
+
 =begin
 - Você pode determinar variantes de determinadas variantes colocando nomedavariante.length! (.reverse!, .upcase!, .downcase!)
 - .gsub!(/oquequertrocar/, “troca”) = troca o que voce quiser
@@ -62,6 +95,7 @@ puts pets["Mango"]
 - .split(” ”) = divide uma string em uma array
 - .sort_by = vai colocar em ordem (arrays de arrays)
 - .to_s = converte o valor de um numero para uma string
+- .to_a = converte o valor em uma array
 
 Addition (`+`)
 
@@ -73,7 +107,7 @@ Division (`/`)
 
 Exponentiation (`**`)
 
-Modulo (`%`)
+Modulo (`%`) = Te da o resto depois da divisão ex: 11 % 2 = 1  
 
 =end
 
